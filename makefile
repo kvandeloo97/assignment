@@ -4,4 +4,4 @@ all: README.md
 	echo "## Make ran at:" >> README.md
 	date >> README.md 
 	echo "## The number of lines within the Guessinggame bash script is:" >> README.md
-	cat guessinggame.sh | wc -l >> README.md 
+	wc -l guessinggame.sh | egrep -o "[0-9}+" >> README.md 
